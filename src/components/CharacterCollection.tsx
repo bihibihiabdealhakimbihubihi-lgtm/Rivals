@@ -142,7 +142,7 @@ export default function CharacterCollection({ onSelectReward }: CharacterCollect
                 style={{
                   background: `linear-gradient(135deg, ${item.color}35, transparent 60%, ${item.color}15)`
                 }}
-                onClick={() => onSelectReward(item)}
+                onClick={() => window.location.hash = `#character/${item.id.replace('-hero', '')}`}
               >
                 {/* Visual Glass Box */}
                 <div className="relative h-full w-full bg-[#04060b]/98 backdrop-blur-3xl rounded-[1.9rem] flex flex-col overflow-hidden border-shine">
